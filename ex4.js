@@ -5,7 +5,6 @@ var ext = process.argv[3];
 
 var re = new RegExp("\\." + ext + "$");
 
-
 fs.readdir(dir, function(err, list){
     if (err) throw err;
 
