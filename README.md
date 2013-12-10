@@ -1,2 +1,2 @@
-learnyounode-exercices
+learnyounode-exercises
 ======================
