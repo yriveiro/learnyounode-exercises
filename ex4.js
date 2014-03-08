@@ -1,16 +1,10 @@
 var fs = require('fs');
 
-var dir = process.argv[2];
-var ext = process.argv[3];
+fs.readFile(process.argv[2], function (err, data) {
+    if (err)
+        throw err;
 
-var re = new RegExp("\\." + ext + "$");
+    console.log(data.toString().split("\n").length -1);
 
-fs.readdir(dir, function(err, list){
-    if (err) throw err;
-
-    list.forEach(function(file) {
-        if (re.test(file)) {
-            console.log(file);
-        }
-    });
+    return;
 });
