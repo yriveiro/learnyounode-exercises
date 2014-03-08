@@ -1,4 +1,4 @@
-var filter = require('./ex5a.js');
+var filter = require('./ex6module.js');
 
 var dir = process.argv[2];
 var ext = process.argv[3];
